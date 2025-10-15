@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Деревня Ратичи | Цифровой код края</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-gray-800">Малые Родины</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#history" class="text-gray-600 hover:text-indigo-600 transition">История</a>
+                <a href="#map" class="text-gray-600 hover:text-indigo-600 transition">Карта</a>
+                <a href="#gallery" class="text-gray-600 hover:text-indigo-600 transition">Галерея</a>
+                <a href="#perspectives" class="text-gray-600 hover:text-indigo-600 transition">Перспективы</a>
+                <a href="#reviews" class="text-gray-600 hover:text-indigo-600 transition">Отзывы</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg-ratichi text-white py-24 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Добро пожаловать в Ратичи</h1>
+            <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-gray-200">Уютный уголок Гродненского района с богатой историей и живописной природой.</p>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="py-20 md:py-28 section-fade-in">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="IMAGES/Историческая визуали.png" alt="Историческое место в Ратичах" class="rounded-2xl shadow-xl w-full">
+                </div>
+                <div>
+                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900">История нашего края</h2>
+                     <p class="mt-4 text-lg text-gray-600">Деревня Ратичи — это место, где переплетаются судьбы и эпохи. Первые упоминания о поселении уходят вглубь веков, но особый след в истории оставила Первая мировая война.</p>
+                     <div class="mt-6 bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                        <h3 class="font-bold text-xl text-indigo-700">Память о Великой войне</h3>
+                        <p class="mt-2 text-gray-600">Здесь, в нашей земле, находится <span class="font-semibold">место захоронения солдат Первой мировой войны</span>. Этот мемориал — молчаливый свидетель тех трагических событий, напоминающий нам о важности мира и ценности человеческой жизни. Мы бережно храним эту память для будущих поколений.</p>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Interactive Map Section -->
+    <section id="map" class="py-20 md:py-28 bg-white section-fade-in">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Интерактивная карта</h2>
+                <p class="mt-4 text-lg text-gray-600">Найдите ключевые объекты деревни: от исторических памятников до объектов инфраструктуры и агроусадеб.</p>
+            </div>
+            <div class="mt-12 rounded-2xl shadow-2xl overflow-hidden border-4 border-white h-96 md:h-[500px]">
+  <iframe 
+    src="https://yandex.ru/map-widget/v1/?ll=23.652210%2C53.768837&z=14" 
+    width="100%" 
+    height="100%" 
+    frameborder="0">
+  </iframe>
+</div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 md:py-28 section-fade-in">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Живая лента: мгновения из Ратичей</h2>
+                <p class="mt-4 text-lg text-gray-600">Почувствуйте атмосферу нашей деревни через фотографии ее жителей и гостей.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 auto-rows-[250px] gap-4 mt-12">
+                <div class="relative col-span-2 row-span-2 rounded-2xl overflow-hidden shadow-xl group cursor-pointer gallery-item" data-src="https://placehold.co/800x800/a5b4fc/1e1b4b?text=Природа">
+                    <img src="IMAGES/Природа деревни Ратичи.png" alt="Природа Ратичей" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <h3 class="absolute bottom-4 left-4 text-xl font-bold text-white">Природа</h3>
+                </div>
+                <div class="relative rounded-2xl overflow-hidden shadow-xl group cursor-pointer gallery-item" data-src="https://placehold.co/500x500/a5b4fc/1e1b4b?text=Старый+дом">
+                    <img src="IMAGES/Старый дом.png" alt="Старый дом" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <h3 class="absolute bottom-4 left-4 text-xl font-bold text-white">Старый дом</h3>
+                </div>
+                <div class="relative rounded-2xl overflow-hidden shadow-xl group cursor-pointer gallery-item" data-src="https://placehold.co/500x500/a5b4fc/1e1b4b?text=Ремесленник">
+                    <img src="IMAGES/Ремесленник.png" alt="Местный ремесленник" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <h3 class="absolute bottom-4 left-4 text-xl font-bold text-white">Ремесленник</h3>
+                </div>
+                <div class="relative rounded-2xl overflow-hidden shadow-xl group cursor-pointer gallery-item" data-src="https://placehold.co/500x500/a5b4fc/1e1b4b?text=Озеро">
+                    <img src="IMAGES/Озеро.png" alt="Озеро рядом с деревней" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <h3 class="absolute bottom-4 left-4 text-xl font-bold text-white">Озеро</h3>
+                </div>
+                <div class="relative rounded-2xl overflow-hidden shadow-xl group cursor-pointer gallery-item" data-src="https://placehold.co/500x500/a5b4fc/1e1b4b?text=Закат">
+                    <img src="IMAGES/ЗАКАТ.png" alt="Закат в Ратичах" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <h3 class="absolute bottom-4 left-4 text-xl font-bold text-white">Закат</h3>
+                </div>
+                 <div class="relative col-span-2 rounded-2xl overflow-hidden shadow-xl group cursor-pointer gallery-item" data-src="https://placehold.co/800x400/a5b4fc/1e1b4b?text=Улица">
+                    <img src="IMAGES/Улица деревни Ратичи.png" alt="Улица деревни" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <h3 class="absolute bottom-4 left-4 text-xl font-bold text-white">Улица</h3>
+                </div>
+                 <div class="relative rounded-2xl overflow-hidden shadow-xl group cursor-pointer gallery-item" data-src="https://placehold.co/500x500/a5b4fc/1e1b4b?text=Памятник">
+                    <img src="IMAGES/Памятник в деревне Ратичи.png" alt="Памятник солдатам" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <h3 class="absolute bottom-4 left-4 text-xl font-bold text-white">Памятник</h3>
+                </div>
+                 <div class="relative rounded-2xl overflow-hidden shadow-xl group cursor-pointer gallery-item" data-src="https://placehold.co/500x500/a5b4fc/1e1b4b?text=Памятник">
+                    <img src="IMAGES/Крест.jpg" alt="Памятник войнам" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <h3 class="absolute bottom-4 left-4 text-xl font-bold text-white">Крест</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modal for Gallery -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- Perspectives Section -->
+    <section id="perspectives" class="py-20 md:py-28 bg-white section-fade-in">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Перспективы: найдите свой дом в Ратичах</h2>
+                <p class="mt-4 text-lg text-gray-600">Мечтаете о жизни на природе? Посмотрите актуальные предложения по аренде и продаже жилья в нашей деревне. (Интеграция с Куфар)</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                <!-- House 1 -->
+                <div class="relative rounded-2xl overflow-hidden shadow-xl group h-96">
+                    <img src="IMAGES/Уютный дом в ратичах.jpg" alt="Дом в аренду" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                    <div class="relative p-6 h-full flex flex-col justify-end text-white">
+                        <span class="text-sm font-semibold bg-indigo-500/90 text-white px-3 py-1 rounded-full self-start">АРЕНДА НА ЛЕТО</span>
+                        <h3 class="text-2xl font-bold mt-2">Уютный дом с садом</h3>
+                        <p class="mt-1 text-gray-200">3 комнаты, все удобства, рядом озеро.</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-2xl font-bold">450 руб./мес</span>
+                            <a href="#" class="bg-white/90 text-indigo-700 px-4 py-2 rounded-lg font-semibold hover:bg-white z-10 transition-colors">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- House 2 -->
+                <div class="relative rounded-2xl overflow-hidden shadow-xl group h-96">
+                    <img src="IMAGES/Участок 15 соток.jpg" alt="Участок на продажу" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                    <div class="relative p-6 h-full flex flex-col justify-end text-white">
+                        <span class="text-sm font-semibold bg-green-500/90 text-white px-3 py-1 rounded-full self-start">ПРОДАЖА</span>
+                        <h3 class="text-2xl font-bold mt-2">Участок 15 соток</h3>
+                        <p class="mt-1 text-gray-200">Отличное место для строительства.</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-2xl font-bold">12 000 руб.</span>
+                            <a href="#" class="bg-white/90 text-indigo-700 px-4 py-2 rounded-lg font-semibold hover:bg-white z-10 transition-colors">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- House 3 -->
+                <div class="relative rounded-2xl overflow-hidden shadow-xl group h-96">
+                    <img src="IMAGES/Коттедж.jpg" alt="Коттедж в аренду" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                    <div class="relative p-6 h-full flex flex-col justify-end text-white">
+                        <span class="text-sm font-semibold bg-indigo-500/90 text-white px-3 py-1 rounded-full self-start">АРЕНДА ДОЛГОСРОЧНО</span>
+                        <h3 class="text-2xl font-bold mt-2">Современный коттедж</h3>
+                        <p class="mt-1 text-gray-200">Полностью меблирован, готов к заселению.</p>
+                        <div class="mt-4 flex justify-between items-center">
+                            <span class="text-2xl font-bold">600 руб./мес</span>
+                            <a href="#" class="bg-white/90 text-indigo-700 px-4 py-2 rounded-lg font-semibold hover:bg-white z-10 transition-colors">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 md:py-28 section-fade-in">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Отзывы и впечатления</h2>
+                <p class="mt-4 text-lg text-gray-600">Что говорят наши гости? Реальные истории и советы от тех, кто уже побывал в Ратичах.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 mt-12">
+                <!-- Review 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md border">
+                    <p class="text-gray-600">"Проезжали мимо, решили остановиться благодаря QR-коду на остановке. Не ожидали найти такую интересную историю о Первой мировой войне! Место захоронения солдат, конечно, производит грустное, но сильное впечатление. Спасибо за память."</p>
+                    <div class="flex items-center mt-4">
+                        <img class="w-12 h-12 rounded-full" src="https://placehold.co/100x100/f0f9ff/0c4a6e?text=А" alt="Фото Анны">
+                        <div class="ml-4">
+                            <p class="font-bold text-gray-900">Анна, Гродно</p>
+                            <p class="text-sm text-gray-500">Посетила в Августе 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md border">
+                    <p class="text-gray-600">"Искал в районе дом для аренды на лето. Через платформу нашел несколько вариантов прямо в Ратичах. Понравилось, что есть не только фото дома, но и общая информация о деревне: тихо, зелено, озеро рядом. Переехали на все лето!"</p>
+                     <div class="flex items-center mt-4">
+                        <img class="w-12 h-12 rounded-full" src="https://placehold.co/100x100/f0f9ff/0c4a6e?text=С" alt="Фото Сергея">
+                        <div class="ml-4">
+                            <p class="font-bold text-gray-900">Сергей, Минск</p>
+                            <p class="text-sm text-gray-500">Проживал с Июня по Август 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12 text-center">
+            <h3 class="text-2xl font-bold">Узнайте больше о Гродненском районе</h3>
+            <p class="mt-2 max-w-xl mx-auto text-gray-400">Ратичи — лишь одна из жемчужин нашего края. Возвращайтесь на главную страницу проекта, чтобы открыть для себя другие удивительные места.</p>
+            <div class="mt-6">
+                <a href="../../index.html" class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-500 transition">На главный сайт проекта</a>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8 text-sm text-gray-500">
+                <p>Проект «Малые родины: Цифровой код края»</p>
+                <p>Гродно, 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="SCRIPTS/script.js"></script>
+</body>
+</html>
